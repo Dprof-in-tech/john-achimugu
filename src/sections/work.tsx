@@ -27,7 +27,7 @@ const WorkSection: React.FC = () => {
       </span>
       <div className='w-full px-2 lg:px-12 mb-4 flex flex-col justify-start'>
         <h2 className='text-white font-bold text-[2.2rem] pl-8 font-epilogue '>Recent Works</h2>
-        <div className='flex flex-col md:flex-wrap justify-between p-4'>
+        <div className='flex flex-wrap justify-between p-4'>
           {works.map((work, index) => (
             <WorkCard 
               key={index} 
