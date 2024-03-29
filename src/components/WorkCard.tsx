@@ -23,13 +23,13 @@ const WorkCard: React.FC<CardProps> = ({ title, image, tags, styles, unavailable
   
       {unavailable ? (
         <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 text-white text-xl font-lighter md:font-bold">
-          <div className="flex items-center justify-center font-['Epilogue'] text-center  rounded-[50%] h-[30%] lg:h-[35%] w-[40%] p-4 bg-white text-black">
+          <div className="flex items-center justify-center font-['Epilogue'] text-center  rounded-[50%] h-[40%] lg:h-[35%] w-[40%] p-4 bg-white text-black">
             Coming Soon
           </div>
         </div>
       ) : (
         <div className="w-full h-[fit-content] cursor-pointer absolute bottom-0 rounded-3xl flex-col justify-end items-center">
-          <div className="hidden group-hover:flex flex-row bg-gray-700 bg-opacity-65 cursor-pointer p-4 rounded-b-3xl w-full h-full justify-between items-end gap-0.5 ">
+          <div className="hidden group-hover:flex flex-row bg-gray-700 bg-opacity-65 cursor-pointer p-4 rounded-b-3xl w-full h-[fit-content] justify-between items-end gap-0.5 ">
 
             <div className="pt-2 flex-col justify-start items-start inline-flex">
               <h1 className="text-white text-[1.2rem] md:text-[1.5rem] font-medium font-['Epilogue'] leading-9">{title}</h1>
