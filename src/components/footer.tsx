@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col w-[100%] items-center justify-center p-4 bg-white text-black ">
+        <footer className="flex flex-col w-full items-center justify-center p-4 bg-white text-black ">
             <div className='w-[95%] border-dashed border-t-2 border-gray-500'>
                 <span className=' text-[3rem] md:text-[3.5rem] lg:text-[5rem] w-[fit-content]'>
-                    <h1 className="text-black">Let's Work</h1>
+                    <h1 className="text-black">Let&apos;s Work</h1>
                     <h1 className="text-blue-600 flex flex-row relative w-[fit-content] pr-4">together <Image src="/icons/Vector.png" alt="" width={5} height={5} className='h-5 w-5 ml-8 absolute top-12 lg:top-20 right-0 ' /></h1>
                 </span>
             </div>
