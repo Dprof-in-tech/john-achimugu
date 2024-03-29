@@ -9,7 +9,7 @@ const WorkPage = () => {
  return(
     <div>
         <Navbar />
-        <div className='bg-black w-full px-12 py-8 mb-4 flex flex-col justify-start'>
+        <div className='bg-black w-full px-2 md:px-12 py-4 md:py-8 mb-4 flex flex-col justify-start'>
             <h2 className="text-white text-center font-bold text-[4.2rem] mt-16 mb-16">Works</h2>
         <div className='flex flex-wrap justify-between p-4'>
           {usecases.map((usecase, index) => (

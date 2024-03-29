@@ -10,8 +10,10 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className={`flex w-full items-center justify-between px-10 py-4 ${dropdownVisible ? 'bg-black text-white' : 'bg-white text-black'} relative`}>
-                <div className=" font-bold text-[1.3rem] ml-4">John Achimugu</div>
+            <nav className={`flex w-full items-center justify-between px-2 lg:px-10 py-4 ${dropdownVisible ? 'bg-black text-white' : 'bg-white text-black'} relative`}>
+                <Link href='/'>
+                    <div className=" font-bold text-[1.3rem] ml-4">John Achimugu</div>
+                </Link>
                 <button onClick={toggleDropdown} className='bg-gray-400 bg-opacity-20 rounded-[50%] p-2 focus:outline-none'>
                     {dropdownVisible ? (
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -25,7 +27,7 @@ const Navbar = () => {
                 </button>
             </nav>
             {dropdownVisible && (
-                <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[4.2rem]">
+                <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[2.1rem] md:text-[4.2rem] border-white border-b">
                     <li className="p-2 hover:text-blue-500">
                         <Link href="/work">Work</Link>
                     </li>

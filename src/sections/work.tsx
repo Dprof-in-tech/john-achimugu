@@ -16,7 +16,7 @@ const WorkSection: React.FC = () => {
         backgroundImage: `url('/images/work-background.png')`,
       }}
     >
-      <span className='w-full mt-16 mb-16 border-dashed border-gray-500 border-t overflow-hidden'>
+      <span className='w-full mt-1 mb-8 lg:mt-16 lg:mb-16 border-dashed border-gray-500 border-t overflow-hidden'>
         <div style={{ width: '100%', overflow: 'hidden' }}>
           <motion.div
             style={{ scaleX: scale, scaleY: scale, display: 'flex', justifyContent: 'center', width: '100%' }}
@@ -25,9 +25,9 @@ const WorkSection: React.FC = () => {
           </motion.div>
         </div>
       </span>
-      <div className='w-full px-12 mb-4 flex flex-col justify-start'>
+      <div className='w-full px-2 lg:px-12 mb-4 flex flex-col justify-start'>
         <h2 className='text-white font-bold text-[2.2rem] pl-8 font-epilogue '>Recent Works</h2>
-        <div className='flex flex-wrap justify-between p-4'>
+        <div className='flex flex-col md:flex-wrap justify-between p-4'>
           {works.map((work, index) => (
             <WorkCard 
               key={index} 
