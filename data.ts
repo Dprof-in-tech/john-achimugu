@@ -27,6 +27,7 @@ export const works = [
         styles: 'mt-32 mb-4',
         unavailable: false
       },
+      
   ];
 
 
@@ -59,18 +60,5 @@ export const works = [
         styles: 'mt-32 mb-4',
         unavailable: false
       },
-      {
-        title: 'Trackack',
-        tags: ['UX Research', 'UI Design'],
-        image: '/images/case4.png',
-        styles: 'mt-0',
-        unavailable: false
-      },
-      {
-        title: 'Trackack',
-        tags: ['UX Research', 'UI Design'],
-        image: '/images/case6.png',
-        styles: 'mt-32 mb-4',
-        unavailable: false
-      },
+     
   ];
