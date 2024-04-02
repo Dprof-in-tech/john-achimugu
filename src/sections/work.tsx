@@ -30,7 +30,7 @@ const WorkSection: React.FC = () => {
         <div className='flex flex-wrap justify-between p-4'>
           {works.map((work, index) => (
             <WorkCard 
-              key={index} 
+              key={index}
               title={work.title} 
               tags={work.tags}
               image={work.image}

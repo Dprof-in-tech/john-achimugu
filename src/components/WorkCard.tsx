@@ -11,6 +11,7 @@ interface CardProps {
 }
 
 const WorkCard: React.FC<CardProps> = ({ title, image, tags, styles, unavailable }) => {
+  const slug = title.toLowerCase().replace(' ', '-');
 
   return (
     <div className={`group w-full md:w-[47%] h-[70vh] mb-8 md:mb-0 md:h-[98vh] relative ${styles}`}>
@@ -42,10 +43,10 @@ const WorkCard: React.FC<CardProps> = ({ title, image, tags, styles, unavailable
               </div>
             </div>
 
-            <Link href='/'>
-            <button className="w-[3rem] h-[2rem] px-4 py-2 bg-white rounded-full mb-2">
-              <Image src="/icons/Vector.png" alt="" width={500} height={500} className="h-30 w-30" />
-            </button>
+            <Link href={`/work/${slug}`}>
+              <button className="w-[3rem] h-[2rem] px-4 py-2 bg-white rounded-full mb-2">
+                <Image src="/icons/Vector.png" alt="" width={500} height={500} className="h-30 w-30" />
+              </button>
             </Link>
           </div>
         </div>

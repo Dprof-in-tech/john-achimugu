@@ -5,7 +5,7 @@ import WorkCard from "@/components/WorkCard";
 import { usecases } from "../../../data";
 import Footer from "@/components/footer";
 
-const WorkPage = () => {
+const Work = () => {
  return(
     <div>
         <Navbar />
@@ -29,4 +29,4 @@ const WorkPage = () => {
  ); 
 }
 
-export default WorkPage
+export default Work

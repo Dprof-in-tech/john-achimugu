@@ -80,8 +80,13 @@ const HeroSection = () => {
         </motion.span>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.6 }}
+          animate={{ opacity: 1, y: 0, rotate: 360,}}
+          transition={{
+            delay: 0.6 ,
+            duration: 20, 
+            ease: "linear", 
+            repeat: Infinity, 
+          }}
         >
           <Image
             src="/images/Scroll.png"
@@ -91,6 +96,7 @@ const HeroSection = () => {
             className=" mt-[4rem] mb-[3rem]"
           />
         </motion.div>
+
       </div>
     </div>
   );

@@ -34,35 +34,35 @@ export const works = [
 
   export const usecases = [
     {
-      title: 'Trackack',
+      title: 'InkSpiff',
       tags: ['UX Research', 'UI Design'],
       image: '/images/case1-copy.png',
       styles: 'md:mt-0',
       unavailable: true
     },
     {
-      title: 'Trackack',
+      title: 'Ibx Exchange',
       tags: ['Brand Identity', 'UI Design', 'UX Research'],
       image: '/images/case2.png',
       styles: 'md:mt-32',
       unavailable: false
     },
     {
-        title: 'Trackack',
+        title: 'Helpmee',
         tags: ['UX Research', 'UI Design'],
         image: '/images/case3.png',
         styles: 'md:mt-0',
         unavailable: false
       },
       {
-        title: 'Trackack',
+        title: 'Attend',
         tags: ['UX Research', 'UI Design'],
         image: '/images/case5.png',
         styles: 'md:mt-32 md:mb-4',
         unavailable: false
       },
       {
-        title: 'Trackack',
+        title: 'Hey Chat',
         tags: ['UX Research', 'UI Design'],
         image: '/images/case4.png',
         styles: 'md:mt-0',
