@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div className="flex flex-col mt-[6rem] w-[95%]">
+
       <div className="w-full flex flex-row justify-between px-4">
         <div className="flex text-[0.7rem] md:text-[1rem] px-2 lg:px-10">
           <motion.h2
@@ -14,7 +15,7 @@ const HeroSection = () => {
             transition={{ delay: 0.2 }}
             className="text-black"
           >
-            Code by <a href="" className="underline">Isaac</a>
+            Code by <a href="#" className="underline">Isaac</a>
           </motion.h2>
         </div>
         <div className="text-[0.7rem] md:text-[2rem] space-x-4 space-y-4">
@@ -79,8 +80,8 @@ const HeroSection = () => {
           </button>
         </motion.span>
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0, rotate: 360,}}
+          initial={{ opacity: 0.8, y: 50 }}
+          animate={{ opacity:1, y: 50, rotate: 360,}}
           transition={{
             delay: 0.6 ,
             duration: 20, 
@@ -93,7 +94,7 @@ const HeroSection = () => {
             alt=""
             width={140}
             height={140}
-            className=" mt-[4rem] mb-[3rem]"
+            className=" mt-[4rem] mb-[5rem]"
           />
         </motion.div>
 

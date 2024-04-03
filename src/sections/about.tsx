@@ -9,10 +9,10 @@ const AboutSection:React.FC = () => {
         <section className="flex flex-col gap-8 mt-16">
             <div className="flex flex-col md:flex-row justify-around items-center mb-8">
                 <div className="w-full md:w-[35%] h-[65vh] p-4">
-                    <Image src='/images/Johns-Avatar.png' width={500} height={500} alt="John's Avatar" className="w-full h-full" />
+                    <Image src="/images/John's-Avatar.png" width={500} height={500} alt="John's Avatar" className="w-full h-full" />
                 </div>
                 <div className="flex flex-col text-gray-900 w-full md:w-[50%] gap-4">
-                    <h1 className="font-bold text-center text-[1.5rem] md:text-[3rem]">Hello, I&apos;m John!</h1>
+                    <h1 className="font-bold text-start text-[1.5rem] md:text-[3rem]">Hello, I&apos;m John!</h1>
                     <p className="text-[1.2rem] mx-auto md:mx-0 max-w-[90%] text-start md:text-justify">
                         I&apos;m a visual and product designer. I bring a multidisciplinary, human-centered approach and a growth 
                         mindset into my design process and craft.  
@@ -27,7 +27,7 @@ const AboutSection:React.FC = () => {
                     </p>
                 </div>
             </div>
-            <span className="text-gray-900 text-[1.2rem] w-full md:w-[90%] mx-auto px-6 py-2 md:mx-0 text-start md:text-justify">
+            <span className="text-gray-900 self-center text-[1.2rem] w-full md:w-[90%] mx-auto px-6 py-2 md:mx-0 text-start md:text-justify">
                 When I&apos;m not designing, you can find me exploring amazing systems (3d modeling, gaming, animating, etc.), watching nature documentaries,  
                 podcasts, listening to music genres with Hiphop, Pop, R&B, indie alternative influence, watching TV series and animes.
             </span>
@@ -35,8 +35,8 @@ const AboutSection:React.FC = () => {
                 If you have similar interests or just want to connect, let&apos;s <a href="#" className="text-blue-500 underline">chat!</a> You can download my <a href="#" className="text-blue-500 underline">resume here.</a>
             </span>
                     
-            <div className="flex flex-col md:flex-row items-center justify-evenly gap-[20%] mt-8 mb-32 px-2 md:px-12">
-                <div className=" flex flex-col w-full  md:w-[35%]">
+            <div className="flex flex-col md:flex-row items-start justify-evenly gap-[20%] mt-8 mb-32 px-2 md:px-12">
+                <div className=" flex flex-col items-start w-full  md:w-[35%]">
                     <span className='flex md:self-start items-center justify-center mb-4 px-8 relative'>
                         <h1 className="text-black font-semibold text-[1.7rem] mb-4 text-center md:text-start">Work Experience</h1>
                         <svg width="302" height="24" viewBox="0 0 302 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute bottom-0'>

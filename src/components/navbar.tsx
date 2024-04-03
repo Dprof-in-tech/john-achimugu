@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -27,7 +28,11 @@ const Navbar = () => {
                 </button>
             </nav>
             {dropdownVisible && (
-                <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[2.1rem] md:text-[4.2rem] border-white border-b">
+               <div>
+                 <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[2.1rem] md:text-[4.2rem]">
+                     <li className="p-2 hover:text-blue-500">
+                        <Link href="/">Home</Link>
+                    </li>
                     <li className="p-2 hover:text-blue-500">
                         <Link href="/work">Work</Link>
                     </li>
@@ -38,7 +43,19 @@ const Navbar = () => {
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
+
+                <div className="flex w-full items-center justify-between  px-8 py-8 bg-black text-white">
+                <div className="text-[1rem]">&#169; Code by Isaac</div>
+                <div className=" hidden md:flex w-[28%] space-x-[1rem] lg:space-x-[1.5rem] text-white text-[1.2rem]">
+                    <a href=""><h1 className=" flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">Instagram <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2'/></h1></a>
+                    <a href=""><h1 className=" flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">Twitter <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2' /></h1></a>
+                    <a href=""><h1 className="flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">LinkedIn <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2' /></h1></a>
+                </div>
+                </div>
+               </div>
             )}
+
+            
         </div>
     );
 };

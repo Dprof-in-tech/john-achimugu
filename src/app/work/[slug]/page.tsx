@@ -1,49 +1,37 @@
-// import { usecases } from "../../../../data";
+import Project from '@/components/ProjectCard';
+import { projects } from '../../../../data';
 
-// export async function getStaticPaths() {
-//     const paths = usecases.map((work) => ({
-//         params: { slug: work.title}, 
-//     }));
-
-//     return { paths, fallback: false };
-// }
-
-
-// export async function getStaticProps({ params }: { params: any }) {
-//     const item = usecases.find((work) => work.title === params.slug);
-//     return { props: { item } };
-// }
-
-
-
-
-// export default function Postpage({params} : {params: any}) {
-
-
-//   return (
-//     <article className="text-black">
-//       <h1>Attend.{params.slug}</h1>
-//     </article>
-//   );
-// };
-
-
-import { usecases } from '../../../../data';
-
-export default function MyDynamicRoutePage({ params }: {params: any}) {
-const filteredData = usecases.filter((usecase) => usecase.title.toLowerCase().replace(' ', '-') === params.slug);
+const ProjectsPage: React.FC<{ params: any }> = ({ params }) => {
+  const filteredData = projects.filter((project) => project.title.toLowerCase().replace(' ', '-') === params.slug);
 
   return (
     <div className='text-black'>
-      <p>Current Slug: {params.slug}</p>
       {filteredData.length > 0 ? (
         filteredData.map((usecase, index) => (
-          <div className='text-black' 
-            key={index}>
-            <h2>Selected usecase:</h2>
-            <p>{usecase.title}</p>
-            <p>Type: {usecase.tags}</p>
-          </div>
+          <Project
+            key={index}
+            title={usecase.title}
+            overview={usecase.overview}
+            heroimage={usecase.heroimage}
+            liveSite={usecase.liveSite}
+            HeroTags={usecase.HeroTags}
+            Background={usecase.Background}
+            BackgroundText={usecase.BackgroundText}
+            BackgroundImage={usecase.BackgroundImage}
+            BackgroundConclusion={usecase.BackgroundConclusion}
+            BackgroundConclusionImage={usecase.BackgroundConclusionImage}
+            SolutionTitle={usecase.SolutionTitle}
+            SolutionText={usecase.SolutionText}
+            SolutionTags={usecase.SolutionTags}
+            SolutionImages={usecase.SolutionImages}
+            UserTestingTitle={usecase.UserTestingTitle}
+            UserTestingText={usecase.UserTestingText}
+            UserTestingImages={usecase.UserTestingImages}
+            FinalThoughtsTitle={usecase.FinalThoughtsTitle}
+            FInalThoughtsText={usecase.FInalThoughtsText}
+            NextCaseImage={usecase.NextCaseImage}
+            NextCaseLink={usecase.NextCaseLink}
+          />
         ))
       ) : (
         <p>No usecase found with ID: {params.slug}</p>
@@ -52,5 +40,4 @@ const filteredData = usecases.filter((usecase) => usecase.title.toLowerCase().re
   );
 }
 
-
-  
+export default ProjectsPage;
