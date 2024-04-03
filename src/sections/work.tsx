@@ -7,7 +7,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 
 const WorkSection: React.FC = () => {
   const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.8]);
   
   return (
     <div
@@ -22,6 +22,9 @@ const WorkSection: React.FC = () => {
             style={{ scaleX: scale, scaleY: scale, display: 'flex', justifyContent: 'center', width: '100%' }}
           >
             <Image src={'/images/marquee.png'} alt="" width={1000} height={1000} className="w-full m-0" />
+            {/* <h1 className='text-[4.5rem] text-white font-bold w-full m-0 text-wrap'>
+              Product Design.UI Design.UX Design.Motion.Video Editing
+            </h1> */}
           </motion.div>
         </div>
       </span>
@@ -40,7 +43,7 @@ const WorkSection: React.FC = () => {
           ))}
         </div>
         <span className='w-full flex items-center justify-center mt-16 mb-16 text-black'>
-            <Link href='/'>
+            <Link href='/work'>
               <button className='px-6 py-2 bg-white rounded-full'>View More</button>
             </Link>
         </span>

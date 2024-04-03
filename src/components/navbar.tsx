@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {motion} from 'framer-motion';
 
 const Navbar = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -9,7 +10,20 @@ const Navbar = () => {
         setDropdownVisible(!dropdownVisible);
     };
 
+    const navbarVariants = {
+        hidden: { y: -100, opacity: 0 },
+        visible: { 
+            y: 0, 
+            opacity: 1,
+            transition: { type: 'spring', duration: 0.5, delay: 0.3 } 
+        },
+    };
     return (
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={navbarVariants}
+        >
         <div>
             <nav className={`flex w-full items-center justify-between px-2 lg:px-10 py-4 ${dropdownVisible ? 'bg-black text-white' : 'bg-white text-black'} relative`}>
                 <Link href='/'>
@@ -28,6 +42,11 @@ const Navbar = () => {
                 </button>
             </nav>
             {dropdownVisible && (
+                <motion.div
+                initial={{ opacity: 0, y: -50 }} 
+                animate={{ opacity: dropdownVisible ? 1 : 0, y: dropdownVisible ? 0 : -50 }} 
+                transition={{ duration: 0.3 }} 
+              >
                <div>
                  <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[2.1rem] md:text-[4.2rem]">
                      <li className="p-2 hover:text-blue-500">
@@ -53,10 +72,10 @@ const Navbar = () => {
                 </div>
                 </div>
                </div>
-            )}
-
-            
+               </motion.div>
+            )}            
         </div>
+        </motion.div>
     );
 };
 

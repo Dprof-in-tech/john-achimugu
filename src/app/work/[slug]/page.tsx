@@ -1,11 +1,13 @@
 import Project from '@/components/ProjectCard';
 import { projects } from '../../../../data';
+import MaskCursor from '@/components/Cursor';
 
 const ProjectsPage: React.FC<{ params: any }> = ({ params }) => {
   const filteredData = projects.filter((project) => project.title.toLowerCase().replace(' ', '-') === params.slug);
 
   return (
     <div className='text-black'>
+      <MaskCursor />
       {filteredData.length > 0 ? (
         filteredData.map((usecase, index) => (
           <Project

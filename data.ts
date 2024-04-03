@@ -271,7 +271,7 @@ export const works = [
       NextCaseLink: 'string'
     },
     {
-      title: 'InkSpiff',
+      title: 'Hey Chat',
       overview: 'Trackack is a fitness and diet tracker app that guides users through their daily workout activities  ',
       heroimage: '/images/trackack-cover.png',
       liveSite: 'string',

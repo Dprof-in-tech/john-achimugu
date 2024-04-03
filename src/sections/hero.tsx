@@ -2,6 +2,7 @@
 import React, { createContext } from 'react';
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
             transition={{ delay: 0.2 }}
             className="text-black"
           >
-            Code by <a href="#" className="underline">Isaac</a>
+            Code by <a href="https://linkedin.com/in/Onyemaechi" className="underline">Isaac</a>
           </motion.h2>
         </div>
         <div className="text-[0.7rem] md:text-[2rem] space-x-4 space-y-4">
@@ -75,9 +76,11 @@ const HeroSection = () => {
           transition={{ delay: 1.4 }}
           className="w-[100%] flex items-center justify-center border-gray-500 border-r-2 border-solid"
         >
-          <button className="bg-black text-white rounded-full px-10 py-2 text-[1.5rem] mt-[2rem]">
-            About Me
-          </button>
+          <Link href='/about'>
+            <button className="bg-black text-white rounded-full px-10 py-2 text-[1.5rem] mt-[2rem]">
+              About Me
+            </button>
+          </Link>
         </motion.span>
         <motion.div
           initial={{ opacity: 0.8, y: 50 }}

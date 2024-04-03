@@ -4,10 +4,12 @@ import React from "react";
 import WorkCard from "@/components/WorkCard";
 import { usecases } from "../../../data";
 import Footer from "@/components/footer";
+import MaskCursor from "@/components/Cursor";
 
 const Work = () => {
  return(
     <div>
+        <MaskCursor />
         <Navbar />
         <div className='bg-black w-full px-2 md:px-12 py-4 md:py-8 mb-4 flex flex-col justify-start'>
             <h2 className="text-white text-center font-bold text-[4.2rem] mt-16 mb-16">Works</h2>
