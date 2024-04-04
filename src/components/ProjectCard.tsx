@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import React from "react";
 import Image from "next/image";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 interface UsecaseProps{
     title: string;
@@ -155,12 +156,14 @@ const Project: React.FC<UsecaseProps> = ({
                     <span className=" flex flex-col items-center w-full h-fit-content] py-2 px-4 ">
                         <h1 className="text-black text-[2rem] font-semibold">Next Case</h1>
                         <div className=" h-[460px] w-[360px] rounded-xl mx-auto ">
-                            <Image src={'/images/case4.png'} alt="Next case" width={500} height={500} className="w-full h-full object-cover rounded-xl" />
+                            <Image src={NextCaseImage} alt="Next case" width={500} height={500} className="w-full h-full object-cover rounded-xl" />
                         </div>
 
-                        <button className="rounded-full px-4 py-2 border-black border text-black mt-8">
-                            View more works
-                        </button>
+                        <Link href={NextCaseLink}>
+                            <button className="rounded-full px-4 py-2 border-black border text-black mt-8">
+                                View more works
+                            </button>
+                        </Link>
                     </span>
                 </div>
             </section>
