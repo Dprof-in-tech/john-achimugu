@@ -12,7 +12,7 @@ const AboutSection:React.FC = () => {
                     <Image src="/images/John's-Avatar.png" width={500} height={500} alt="John's Avatar" className="w-full h-full" />
                 </div>
                 <div className="flex flex-col text-gray-900 w-full md:w-[50%] gap-4">
-                    <h1 className="font-bold text-start text-[1.5rem] md:text-[3rem]">Hello, I&apos;m John!</h1>
+                    <h1 className="font-bold px-4 md:px-0 text-start text-[1.5rem] md:text-[3rem]">Hello, I&apos;m John!</h1>
                     <p className="text-[1.2rem] mx-auto md:mx-0 max-w-[90%] text-start md:text-justify">
                         I&apos;m a visual and product designer. I bring a multidisciplinary, human-centered approach and a growth 
                         mindset into my design process and craft.  

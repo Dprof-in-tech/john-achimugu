@@ -17,10 +17,25 @@ const Footer = () => {
             </div>
             <div className="flex w-[95%] items-center justify-between py-8 bg-white text-black border-dashed border-t-2 border-gray-500">
                 <div className="text-gray-600 text-[1rem]">&#169;John Achimugu 2023</div>
-                <div className=" hidden md:flex w-[28%] space-x-[1rem] lg:space-x-[1.5rem] text-gray-400 text-[1.2rem]">
-                    <a href=""><h1 className="text-gray-600 flex flex-row items-center w-[fit-content] pr-4">Instagram <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2'/></h1></a>
-                    <a href=""><h1 className="text-gray-600 flex flex-row items-center w-[fit-content] pr-4">Twitter <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2' /></h1></a>
-                    <a href=""><h1 className="text-gray-600 flex flex-row items-center w-[fit-content] pr-4">LinkedIn <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2' /></h1></a>
+                <div className=" hidden md:flex md:w-auto   space-x-[1rem] lg:space-x-[1.5rem] text-gray-400 text-[1.2rem]">
+                    <a href="">
+                        <h1 className="text-gray-600 flex flex-row items-center w-[fit-content] pr-4">Instagram <svg className='h-3 w-3 ml-2' width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.54395 9.35693L10.0602 1.35693M10.0602 1.35693H1.8846M10.0602 1.35693V9.03693" stroke="black" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </h1>
+                    </a>
+                    <a href="">
+                        <h1 className="text-gray-600 flex flex-row items-center w-[fit-content] pr-4">Twitter <svg className='h-3 w-3 ml-2' width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.54395 9.35693L10.0602 1.35693M10.0602 1.35693H1.8846M10.0602 1.35693V9.03693" stroke="black" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </h1>
+                    </a>
+                    <a href="">
+                        <h1 className="text-gray-600 flex flex-row items-center w-[fit-content] pr-4">LinkedIn <svg className='h-3 w-3 ml-2' width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.54395 9.35693L10.0602 1.35693M10.0602 1.35693H1.8846M10.0602 1.35693V9.03693" stroke="black" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </h1>
+                    </a>
                 </div>
             </div>
        </footer>

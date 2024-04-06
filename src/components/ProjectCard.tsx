@@ -55,10 +55,10 @@ const Project: React.FC<UsecaseProps> = ({
     return(
         <div>
             <Navbar />
-            <section className="text-black mt-16 px-12 py-2 space-y-4">
+            <section className="text-black mt-4 md:mt-16 px-2 md:px-12 py-2 space-y-4">
                <span className="w-full space-y-2">
-                    <h1 className="max-w-[50%] text-gray-800 font-bold text-[2.5rem]">{title}</h1>
-                    <p className="max-w-[50%] text-gray-800 text-[1.2rem]">
+                    <h1 className="max-w-full md:max-w-[50%] text-gray-800 font-bold text-[2.5rem]">{title}</h1>
+                    <p className="max-w-full md:max-w-[50%] text-gray-800 text-[1.2rem]">
                         {overview}
                     </p>
                </span>
@@ -72,9 +72,9 @@ const Project: React.FC<UsecaseProps> = ({
                         </a>
                     </span>
                </div>
-               <div className="flex flex-row items-start justify-center w-full h-[fit-content] gap-[16%] px-6 py-4 mb-32">
+               <div className="flex flex-col md:flex-row items-start justify-center w-full h-[fit-content] gap-[1rem] md:gap-[16%] px-6 py-4 mb-32">
                 {HeroTags.map((tag, index) => (
-                    <span key={index} className="w-full flex flex-col justify-between items-start mt-12 mb-24">
+                    <span key={index} className="w-full flex flex-col justify-between items-start md:mt-12 md:mb-24">
                     <h2 className="font-semibold text-black ">{tag.title}</h2>
                     <ul className="space-y-2">
                         {tag.items.map((item, index) => (
@@ -86,29 +86,29 @@ const Project: React.FC<UsecaseProps> = ({
                 </div>
                 <div className="flex flex-col justify-start space-y-8 text-[1.2rem] text-gray-700 px-4 py-6 border-t-2 border-dashed border-gray-700 ">
                     <h1 className="text-black text-[1.5rem] font-bold">{Background}</h1>
-                    <p className="max-w-[65%]">
+                    <p className="max-w-full md:max-w-[65%]">
                         {BackgroundText}
                     </p>
                 </div>
            </section>
            <section className="flex flex-col w-full ">
-                <div className="w-full h-[620px]">
+                <div className="w-full h-[240px] md:h-[620px]">
                     <Image src={BackgroundImage} alt="Trackack" width={1000} height={1000} className="w-full h-full object-cover" />
                 </div>
-                <p className="text-gray-700 max-w-[50%] mr-20 mt-16 mb-16 self-end">
+                <p className="text-gray-700 max-w-full md:max-w-[50%] m-4 md:mr-20 md:mt-16 md:mb-16 md:self-end">
                     {BackgroundConclusion}
                 </p>
             </section>
             <section className="w-full">
-                <div className="w-full h-[620px]">
+                <div className="w-full h-[240px] md:h-[620px]">
                     <Image src={BackgroundConclusionImage} alt="Trackack" width={1000} height={1000} className="w-full h-full object-cover" />
                 </div>
             </section>
-            <section>
-                <div className="flex flex-col px-6 py-4 mt-12">
+            <section className="w-full">
+                <div className="flex flex-col px-2 md:px-6 py-4 mt-12">
                     <h1 className="text-black text-[2rem] font-semibold">{SolutionTitle}</h1>
                     <span className="text-gray-700">
-                        <p className="max-w-[85%] text-[1.2rem] mb-8">
+                        <p className="max-w-full md:max-w-[85%] text-[1.2rem] mb-8">
                             {SolutionText}
                         </p>
                         {SolutionTags.slice(0, ).map((SolutionTag, index) => (
@@ -118,8 +118,8 @@ const Project: React.FC<UsecaseProps> = ({
                         ))}
                     </span>
                     {SolutionImages.slice(0, ).map((SolutionImage, index) => (
-                    <div key={index} className="flex flex-col justify-start gap-6 px-2 py-4 mt-12">
-                        <span className="w-full h-[620px]">
+                    <div key={index} className="flex flex-col justify-start gap-2 md:gap-6 md:px-2 py-2 md:py-4 md:mt-12">
+                        <span className="w-full h-[240px] md:h-[620px]">
                             <Image src={SolutionImage} alt="Trackack" width={1000} height={1000} className="w-full h-full object-cover" />
                         </span>
                     </div>
@@ -127,10 +127,10 @@ const Project: React.FC<UsecaseProps> = ({
                 </div>
             </section>
             <section>
-                <div className="flex flex-col px-8 py-4 mt-6">
+                <div className="flex flex-col px-2 md:px-8 py-4 mt-6">
                     <h1 className="text-black text-[2rem] font-semibold">{UserTestingTitle}</h1>
-                    <span className="text-gray-700 mb-32">
-                        <p className="max-w-[85%] text-[1.2rem] mb-8">
+                    <span className="text-gray-700 mb-8 md:mb-32">
+                        <p className="max-w-full md:max-w-[85%] text-[1.2rem] mb-2 md:mb-8">
                             {UserTestingText} 
                         </p>
                     </span>
@@ -145,17 +145,17 @@ const Project: React.FC<UsecaseProps> = ({
                     ))}
                 </div>
 
-                <div className="flex flex-col px-10 py-4 mt-12">
+                <div className="flex flex-col px-2 md:px-10 py-4 mt-12">
                     <h1 className="text-black text-[2rem] font-semibold">{FinalThoughtsTitle}</h1>
-                    <span className="text-gray-700 mb-32">
-                        <p className="max-w-[85%] text-[1.2rem]">
+                    <span className="text-gray-700 mb-8 md:mb-32">
+                        <p className="max-w-full md:max-w-[85%] text-[1.2rem]">
                             {FInalThoughtsText}
                         </p>
                     </span>
 
-                    <span className=" flex flex-col items-center w-full h-fit-content] py-2 px-4 ">
+                    <span className=" flex flex-col items-center w-full h-fit-content] py-2 px-2 md:px-4 ">
                         <h1 className="text-black text-[2rem] font-semibold">Next Case</h1>
-                        <div className=" h-[460px] w-[360px] rounded-xl mx-auto ">
+                        <div className=" md:h-[460px] h-[380px] w-full md:w-[360px] rounded-xl mx-auto ">
                             <Image src={NextCaseImage} alt="Next case" width={500} height={500} className="w-full h-full object-cover rounded-xl" />
                         </div>
 

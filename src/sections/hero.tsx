@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col mt-[6rem] w-[95%]">
+    <div className="flex flex-col mt-[6rem] w-full px-4 md:px-0 md:w-[95%]">
 
       <div className="w-full flex flex-row justify-between px-4">
         <div className="flex text-[0.7rem] md:text-[1rem] px-2 lg:px-10">
@@ -74,7 +74,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4 }}
-          className="w-[100%] flex items-center justify-center border-gray-500 border-r-2 border-solid"
+          className="w-[100%] flex items-center justify-center md:border-gray-500 md:border-r-2 md:border-solid"
         >
           <Link href='/about'>
             <button className="bg-black text-white rounded-full px-10 py-2 text-[1.5rem] mt-[2rem]">

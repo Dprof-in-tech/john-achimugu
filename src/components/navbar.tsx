@@ -24,10 +24,10 @@ const Navbar = () => {
             animate="visible"
             variants={navbarVariants}
         >
-        <div>
+        <div className='focus'>
             <nav className={`flex w-full items-center justify-between px-2 lg:px-10 py-4 ${dropdownVisible ? 'bg-black text-white' : 'bg-white text-black'} relative`}>
                 <Link href='/'>
-                    <div className=" font-bold text-[1.3rem] ml-4">John Achimugu</div>
+                    <div className=" font-bold text-[1.3rem] ml:2 md:ml-4">John Achimugu</div>
                 </Link>
                 <button onClick={toggleDropdown} className='bg-gray-400 bg-opacity-20 rounded-[50%] p-2 focus:outline-none'>
                     {dropdownVisible ? (
@@ -47,7 +47,7 @@ const Navbar = () => {
                 animate={{ opacity: dropdownVisible ? 1 : 0, y: dropdownVisible ? 0 : -50 }} 
                 transition={{ duration: 0.3 }} 
               >
-               <div>
+               <div className='active:h-[100vh]'>
                  <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[2.1rem] md:text-[4.2rem]">
                      <li className="p-2 hover:text-blue-500">
                         <Link href="/">Home</Link>
@@ -63,13 +63,29 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="flex w-full items-center justify-between  px-8 py-8 bg-black text-white">
+                <div className="flex flex-col md:flex-row w-full items-center justify-between  px-8 py-8 bg-black text-white">
                 <div className="text-[1rem]">&#169; Code by Isaac</div>
-                <div className=" hidden md:flex w-[28%] space-x-[1rem] lg:space-x-[1.5rem] text-white text-[1.2rem]">
-                    <a href=""><h1 className=" flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">Instagram <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2'/></h1></a>
-                    <a href=""><h1 className=" flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">Twitter <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2' /></h1></a>
-                    <a href=""><h1 className="flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">LinkedIn <Image src="/icons/Vector-1.png" alt="" width={3} height={3} className='h-3 w-3 ml-2' /></h1></a>
+                <div className=" hidden md:flex md:w-auto   space-x-[1rem] lg:space-x-[1.5rem] text-white text-[1.2rem]">
+                    <a href="">
+                        <h1 className="text-white flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">Instagram <svg className='h-3 w-3 ml-2' width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.54395 9.35693L10.0602 1.35693M10.0602 1.35693H1.8846M10.0602 1.35693V9.03693" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </h1>
+                    </a>
+                    <a href="">
+                        <h1 className="text-white flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">Twitter <svg className='h-3 w-3 ml-2' width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.54395 9.35693L10.0602 1.35693M10.0602 1.35693H1.8846M10.0602 1.35693V9.03693" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </h1>
+                    </a>
+                    <a href="">
+                        <h1 className="text-white flex flex-row items-center w-[fit-content]  hover:text-blue-500 pr-4">LinkedIn <svg className='h-3 w-3 ml-2' width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.54395 9.35693L10.0602 1.35693M10.0602 1.35693H1.8846M10.0602 1.35693V9.03693" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </h1>
+                    </a>
                 </div>
+
                 </div>
                </div>
                </motion.div>
