@@ -47,8 +47,8 @@ const Navbar = () => {
                 animate={{ opacity: dropdownVisible ? 1 : 0, y: dropdownVisible ? 0 : -50 }} 
                 transition={{ duration: 0.3 }} 
               >
-               <div className='active:h-[100vh]'>
-                 <ul className="flex flex-col items-center justify-center w-full relative bg-black space-y-2 text-white text-[2.1rem] md:text-[4.2rem]">
+               <div className='flex flex-col justify-evenly h-[90vh] w-full  bg-black'>
+                 <ul className="flex flex-col items-center justify-center w-full relative space-y-2 text-white text-[2.1rem] md:text-[4.2rem]">
                      <li className="p-2 hover:text-blue-500">
                         <Link href="/">Home</Link>
                     </li>
