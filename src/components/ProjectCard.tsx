@@ -155,9 +155,11 @@ const Project: React.FC<UsecaseProps> = ({
 
                     <span className=" flex flex-col items-center w-full h-fit-content] py-2 px-2 md:px-4 ">
                         <h1 className="text-black text-[2rem] font-semibold">Next Case</h1>
-                        <div className=" md:h-[460px] h-[380px] w-full md:w-[360px] rounded-xl mx-auto ">
-                            <Image src={NextCaseImage} alt="Next case" width={500} height={500} className="w-full h-full object-cover rounded-xl" />
-                        </div>
+                        <Link href={NextCaseLink}>
+                            <div className=" md:h-[460px] h-[380px] w-full md:w-[360px] rounded-xl mx-auto ">
+                                <Image src={NextCaseImage} alt="Next case" width={500} height={500} className="w-full h-full object-cover rounded-xl" />
+                            </div>
+                        </Link>
 
                         <Link href={NextCaseLink}>
                             <button className="rounded-full px-4 py-2 border-black border text-black mt-8">

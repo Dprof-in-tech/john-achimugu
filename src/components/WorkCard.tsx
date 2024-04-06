@@ -15,20 +15,28 @@ const WorkCard: React.FC<CardProps> = ({ title, image, tags, styles, unavailable
 
   return (
     <div className={`group w-full md:w-[47%] h-[70vh] mb-8 md:mb-0 md:h-[98vh] relative ${styles}`}>
+      {unavailable ? (
+        <Link href={`#`}>
+          <div className="w-full h-full relative rounded-3xl" style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }} />
+
+        <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 text-white text-xl font-lighter md:font-bold">
+          <div className="flex items-center justify-center font-['Epilogue'] text-center  rounded-[50%] h-[120px] lg:h-[35%] w-[40%] p-4 bg-white text-black">
+            Coming Soon
+          </div>
+        </div>
+        </Link>
+      ) : (
+        <Link href={`/work/${slug}`}>
       <div className="w-full h-full relative rounded-3xl" style={{
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }} />
 
-  
-      {unavailable ? (
-        <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 text-white text-xl font-lighter md:font-bold">
-          <div className="flex items-center justify-center font-['Epilogue'] text-center  rounded-[50%] h-[120px] lg:h-[35%] w-[40%] p-4 bg-white text-black">
-            Coming Soon
-          </div>
-        </div>
-      ) : (
         <div className="w-full h-[fit-content] cursor-pointer absolute bottom-0 rounded-3xl flex-col justify-end items-center">
           <div className="hidden group-hover:flex flex-row bg-gray-700 bg-opacity-65 cursor-pointer p-4 rounded-b-3xl w-full h-[fit-content] justify-between items-end gap-0.5 ">
 
@@ -50,7 +58,8 @@ const WorkCard: React.FC<CardProps> = ({ title, image, tags, styles, unavailable
             </Link>
           </div>
         </div>
-      )}
+      </Link>
+    )}
     </div>
   );
 };
