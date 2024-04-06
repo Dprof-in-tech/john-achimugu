@@ -31,8 +31,8 @@ const MaskCursor: React.FC = () => {
       style={{
         translateX: cursorXSpring,
         translateY: cursorYSpring,
-        width: 64, // Size of the mask
-        height: 64, // Size of the mask
+        width: 64, 
+        height: 64, 
         borderRadius: '50%',
         display: 'flex',
         alignItems: 'center',
@@ -42,7 +42,6 @@ const MaskCursor: React.FC = () => {
       whileHover={{ scale: 1.5, backgroundColor: '#ffffff', mixBlendMode: 'difference' }}
       transition={{ type: 'spring', stiffness: 300, damping: 10 }}
     >
-      {/* Dot in the center of the mask */}
       <div className="w-full h-full bg-gray-900 opacity-80 rounded-full"></div>
     </motion.div>
   );
