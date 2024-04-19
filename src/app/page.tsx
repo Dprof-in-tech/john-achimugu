@@ -9,7 +9,7 @@ import MaskCursor from "@/components/Cursor";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-['Epilogue']">
      <MaskCursor />
       <Navbar />
         <HeroSection />
