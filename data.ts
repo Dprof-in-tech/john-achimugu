@@ -1,29 +1,30 @@
 export const works = [
+  {
+    title: 'Young & Skilled Initiative',
+    tag: 'Personalized learning application/programs for students',
+    image: '/images/young.png',
+    styles: 'md:mt-0',
+    unavailable: true
+  },
     {
       title: 'InkSpiff',
-      tags: ['UX Research', 'UI Design'],
+      tag: 'Markdown & Read.me document organizer ',
       image: '/images/case1.png',
-      styles: 'md:mt-0',
+      styles: 'md:mt-32 md:mb-8',
       unavailable: true
     },
     {
       title: 'Ibx Exchange',
-      tags: ['Brand Identity', 'UI Design', 'UX Research'],
+      tag: 'Swift & Secure Fiat peer-to-peer (p2p) transactions',
       image: '/images/case2.png',
-      styles: 'md:mt-32',
+      styles: 'mt-0',
       unavailable: false
     },
-    {
-        title: 'Helpmee',
-        tags: ['UX Research', 'UI Design'],
-        image: '/images/case3.png',
-        styles: 'md:mt-0',
-        unavailable: false
-      },
+    
       {
-        title: 'Hey Chat',
-        tags: ['UX Research', 'UI Design'],
-        image: '/images/case4.png',
+        title: 'Oneway',
+        tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
+        image: '/images/oneway.png',
         styles: 'md:mt-32 md:mb-4',
         unavailable: false
       },
@@ -34,43 +35,57 @@ export const works = [
 
   export const usecases = [
     {
-      title: 'InkSpiff',
-      tags: ['UX Research', 'UI Design'],
-      image: '/images/case1-copy.png',
+      title: 'Young & Skilled Initiative',
+      tag: 'Personalized learning application/programs for students',
+      image: '/images/young.png',
       styles: 'md:mt-0',
       unavailable: true
     },
     {
+      title: 'InkSpiff',
+      tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
+      image: '/images/case1.png',
+      styles: 'md:mt-32 md:mb-8',
+      unavailable: true
+    },
+    {
       title: 'Ibx Exchange',
-      tags: ['Brand Identity', 'UI Design', 'UX Research'],
+      tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
       image: '/images/case2.png',
-      styles: 'md:mt-32',
+      styles: 'md:mt-0',
+      unavailable: false
+    },
+    {
+      title: 'Oneway',
+      tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
+      image: '/images/oneway.png',
+      styles: 'md:mt-32 md:mb-4',
       unavailable: false
     },
     {
         title: 'Helpmee',
-        tags: ['UX Research', 'UI Design'],
+        tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
         image: '/images/case3.png',
         styles: 'md:mt-0',
         unavailable: false
       },
       {
         title: 'Attend',
-        tags: ['UX Research', 'UI Design'],
+        tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
         image: '/images/case5.png',
         styles: 'md:mt-32 md:mb-4',
         unavailable: false
       },
       {
         title: 'Hey Chat',
-        tags: ['UX Research', 'UI Design'],
+        tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
         image: '/images/case4.png',
         styles: 'md:mt-0',
         unavailable: false
       },
       {
         title: 'Trackack',
-        tags: ['UX Research', 'UI Design'],
+        tag: 'Self-checkout, scan-to-pay for seamless shopping experience ',
         image: '/images/case6.png',
         styles: 'md:mt-32 md:mb-4',
         unavailable: false
@@ -79,10 +94,22 @@ export const works = [
 
   export const experiences = [
     {
+      company: 'Oneway',
+      location: '- Lagos, Nigeria',
+      role: 'Lead UI/UX Designer',
+      duration: 'January 2022 - present'
+    },
+    {
       company: 'Ibx Exchange',
       location: '- Lagos, Nigeria',
       role: 'Product Designer',
       duration: 'July 2022 - present'
+    },
+    {
+      company: 'Genesys Learnable',
+      location: '- Enugu, Nigeria',
+      role: 'Product Designer intern',
+      duration: 'September 2022 - March 2023'
     },
     {
       company: 'Browsio',

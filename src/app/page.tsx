@@ -9,12 +9,12 @@ import MaskCursor from "@/components/Cursor";
 
 export default function Home() {
   return (
-    <div className="font-['Epilogue']">
-     <MaskCursor />
+    <div className="font-['Moon Walk']">
+     {/* <MaskCursor /> */}
       <Navbar />
         <HeroSection />
         <WorkSection />
-        <Prefooter />
+        {/* <Prefooter /> */}
       <Footer />
     </div>
   );

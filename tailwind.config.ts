@@ -16,9 +16,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Epilogue', 'serif'],
+        moonwalk: ['Moonwalk', 'sans-serif'],
+        sans: ['Epilogue', 'sans-serif'],
       },
       backgroundImage: {
+        'work-bg': "url('/images/work-background.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

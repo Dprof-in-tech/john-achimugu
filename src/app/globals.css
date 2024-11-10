@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Moonwalk';
+  src: url('/fonts/Moonwalk.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
