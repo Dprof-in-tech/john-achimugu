@@ -47,7 +47,7 @@ const HeroSection = () => {
       <div className="flex flex-col items-start gap-4 w-full mt-[4rem] px-4">
         <div className="w-full">
           <h1 className="flex gap-2 font-sans text-black text-[50px] font-[500]">
-            Hey! I'm John (lexjo), a
+            Hey! I&apos;m John (lexjo), a
             <span className="hover:text-blue-600">designer.</span>
           </h1>
           <h2 className="flex gap-2 font-sans text-black text-[50px] font-[500]">

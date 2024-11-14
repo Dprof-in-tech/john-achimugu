@@ -25,7 +25,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      
+
+      animation: {
+        'shine': 'shine 1.5s ease-in-out',
+      },
+      keyframes: {
+        shine: {
+          '0%': { transform: 'translateX(-100%) rotate(25deg)' },
+          '100%': { transform: 'translateX(100%) rotate(25deg)' },
+        },
+      },
+
     },
   },
   plugins: [],

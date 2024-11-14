@@ -5,6 +5,7 @@ import HeroSection from "../sections/hero";
 import WorkSection from "../sections/work";
 import Prefooter from "../sections/prefooter";
 import MaskCursor from "@/components/Cursor";
+import StackSection from "@/sections/stack";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroSection />
         <WorkSection />
         {/* <Prefooter /> */}
+        <StackSection />
       <Footer />
     </div>
   );
