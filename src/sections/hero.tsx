@@ -39,7 +39,9 @@ const HeroSection = () => {
           >
             Code by{" "}
             <a href="https://linkedin.com/in/Onyemaechi" className="underline">
-              Isaac
+              Isaac 
+            </a> & <a href="https://x.com/Deontrm" className="underline">
+              Deon
             </a>
           </motion.h2>
         </div>
