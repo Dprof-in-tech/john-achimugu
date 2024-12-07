@@ -483,7 +483,7 @@ const AboutSection: React.FC = () => {
             className="w-full h-[82%] rotate-0 filter grayscale group-hover:grayscale-0"
           />
           <p className="hidden group-hover:flex text-black opacity-60 mt-4 text-[20px]">
-            Yep that's me
+            Yep that&apos;s me
           </p>
         </div>
         <div className="flex flex-col text-gray-900 w-full md:w-[60%] gap-[3rem] pt-12 px-4">
@@ -513,7 +513,7 @@ const AboutSection: React.FC = () => {
 
       {/* Interests Section */}
       <span className="self-center text-[1.2rem] w-full md:w-[90%] mx-auto px-6 py-2 md:mx-0 text-start md:text-justify text-white">
-        When I'm not designing, you can find me exploring amazing systems
+        When I&apos;m not designing, you can find me exploring amazing systems
         (design trends, gaming, animating, etc.), playing video games on my
         console, watching animes, series, movies and nature documentaries,
         listening to music genres with Hiphop, Pop, R&B, indie alternative
@@ -533,7 +533,7 @@ const AboutSection: React.FC = () => {
           ref={sectionRefWatching}
         >
           <h2 className="text-[28px] text-white">
-            What I'm <span className="opacity-60">watching</span>
+            What I&apos;m <span className="opacity-60">watching</span>
           </h2>
           <p className="text-[20px] text-white">
             You can catch me on Apple TV+, Netflix, HBO, Prime videos, Disney+ &
@@ -559,7 +559,7 @@ const AboutSection: React.FC = () => {
           ref={sectionRefListening}
         >
           <h2 className="text-[28px] text-white">
-            What I'm <span className="opacity-60">listening to</span>
+            What I&apos;m <span className="opacity-60">listening to</span>
           </h2>
           <p className="text-[20px] text-white">
             I vibe to any genre of music like Pop, Hip-hop, Alternative Hip-hop,
@@ -574,7 +574,7 @@ const AboutSection: React.FC = () => {
               alt="spotify"
               className="mr-2 filter grayscale group-hover:grayscale-0"
             />
-            Let's Vibe
+            Let&apos;s Vibe
           </button>
         </div>
 
@@ -595,7 +595,7 @@ const AboutSection: React.FC = () => {
           ref={sectionRefgaming}
         >
           <h2 className="text-[28px] text-white">
-            When I'm <span className="opacity-60">Gaming</span>
+            When I&apos;m <span className="opacity-60">Gaming</span>
           </h2>
           <p className="text-[20px] text-white">
             I mostly play Action-adventure, RPG, Sports, Multiplayer Battle
@@ -631,13 +631,13 @@ const AboutSection: React.FC = () => {
       {/* Contact Section */}
       <div className="flex flex-col w-full gap-3 md:w-[40%] px-[6rem] mb-12">
         <p className="text-white text-[28px]">
-          Let's grab <span className="opacity-60">coffee and chat!</span>
+          Let&apos;s grab <span className="opacity-60">coffee and chat!</span>
         </p>
         <p className="text-white text-[20px]">
           The best stories are told in person.
         </p>
         <p className="text-white mt-4 text-[20px]">
-          Say hello at achimugunusa11@gmail.com. For more info, here's my{" "}
+          Say hello at achimugunusa11@gmail.com. For more info, here&apos;s my{" "}
           <a href="" className="underline">
             resume.
           </a>

@@ -55,7 +55,7 @@ const Navbar = () => {
                         <Link href="/about">About</Link>
                     </li>
                     <li className="p-2">
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/#">Contact</Link>
                     </li>
                 </ul>
 
