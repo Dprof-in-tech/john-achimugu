@@ -27,17 +27,13 @@ const Navbar = () => {
         <div className='focus'>
             <nav className={`flex w-full items-center justify-between px-2 lg:px-10 py-4 ${dropdownVisible ? 'bg-black text-white' : 'bg-white text-black'} relative`}>
                 <Link href='/'>
-                    <div className=" font-bold text-[1.3rem] ml:2 md:ml-4">John Achimugu</div>
+                    <div className="font-[400] text-[40px] ml:2 md:ml-4 font-moonwalk">JOHN ACHIMUGU</div>
                 </Link>
                 <button onClick={toggleDropdown} className='bg-gray-400 bg-opacity-20 rounded-[50%] p-2 focus:outline-none'>
                     {dropdownVisible ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>
+                        <Image src='/icons/close.svg' alt='close' width={73} height={73} />
                     ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-                        </svg>
+                        <Image src='/icons/menu-white.svg' alt='open' width={73} height={73} />
                     )}
                 </button>
             </nav>
@@ -49,17 +45,17 @@ const Navbar = () => {
               >
                <div className='flex flex-col justify-evenly h-[90vh] w-full  bg-black'>
                  <ul className="flex flex-col items-center justify-center w-full relative space-y-2 text-white text-[2.1rem] md:text-[4.2rem]">
-                     <li className="p-2 hover:text-blue-500">
+                     <li className="p-2 ">
                         <Link href="/">Home</Link>
                     </li>
-                    <li className="p-2 hover:text-blue-500">
-                        <Link href="/work">Work</Link>
+                    <li className="p-2 ">
+                        <Link href="/work">Works</Link>
                     </li>
-                    <li className="p-2 hover:text-blue-500">
+                    <li className="p-2">
                         <Link href="/about">About</Link>
                     </li>
-                    <li className="p-2 hover:text-blue-500">
-                        <Link href="/contact">Contact</Link>
+                    <li className="p-2">
+                        <Link href="/#">Contact</Link>
                     </li>
                 </ul>
 

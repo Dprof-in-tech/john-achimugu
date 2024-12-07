@@ -5,61 +5,72 @@ import Link from 'next/link';
 interface CardProps {
   title: string;
   image: string;
-  tags: string[];
+  tag: string;
   styles: string;
   unavailable?: boolean;
 }
 
-const WorkCard: React.FC<CardProps> = ({ title, image, tags, styles, unavailable }) => {
+const WorkCard: React.FC<CardProps> = ({ title, image, tag, styles, unavailable }) => {
   const slug = title.toLowerCase().replace(' ', '-');
 
   return (
-    <div className={`group w-full md:w-[47%] h-[70vh] mb-8 md:mb-0 md:h-[98vh] relative ${styles}`}>
+    <div className={`group w-full md:w-[563px] h-[70vh] mb-[8rem] md:mb-0 md:h-[657px] relative ${styles}`}>
       {unavailable ? (
         <Link href={`#`}>
-          <div className="w-full h-full relative rounded-3xl" style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }} />
+          <div className="w-full h-full relative rounded-3xl transition-transform duration-300 ease-in-out filter grayscale group-hover:grayscale-0"
+               style={{
+                 backgroundImage: `url(${image})`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+               }} 
+          />
 
-        <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 text-white text-xl font-lighter md:font-bold">
-          <div className="flex items-center justify-center font-['Epilogue'] text-center  rounded-[50%] h-[120px] lg:h-[35%] w-[40%] p-4 bg-white text-black">
-            Coming Soon
+          <div className="absolute inset-0 hidden group-hover:flex items-center justify-center rounded-3xl bg-black bg-opacity-50 text-white text-xl font-lighter md:font-bold">
+            <div className="flex items-center justify-center font-moonwalk text-center rounded-full px-6 py-3 bg-white text-black absolute bottom-[10%]">
+              Coming Soon
+            </div>
           </div>
-        </div>
+          <div className="w-full h-[fit-content] cursor-pointer rounded-3xl flex-col justify-end items-center">
+            <div className="flex flex-col cursor-pointer p-4 w-full h-[fit-content] justify-between items-start gap-0.5 ">
+              <div className="pt-2 flex-col justify-start items-start inline-flex gap-1">
+                <h1 className="text-white text-[1.2rem] md:text-[20px] font-[600] font-sans leading-9">{title}</h1>
+                <div className="justify-start items-start">
+                  <p className='font-[400] text-[16px]'>{tag}</p>
+                </div>
+              </div>
+                <p className=" self-start justify-center mb-2 mt-1 w-full text-[12px] font-[300]">
+                  Coming Soon
+                </p>
+            </div>
+          </div>
         </Link>
       ) : (
         <Link href={`/work/${slug}`}>
-      <div className="w-full h-full relative rounded-3xl" style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }} />
-
-        <div className="w-full h-[fit-content] cursor-pointer absolute bottom-0 rounded-3xl flex-col justify-end items-center">
-          <div className="hidden group-hover:flex flex-row bg-gray-700 bg-opacity-65 cursor-pointer p-4 rounded-b-3xl w-full h-[fit-content] justify-between items-end gap-0.5 ">
-
-            <div className="pt-2 flex-col justify-start items-start inline-flex">
-              <h1 className="text-white text-[1.2rem] md:text-[1.5rem] font-medium font-['Epilogue'] leading-9">{title}</h1>
-              <div className="p-2 justify-start items-start gap-3 inline-flex flex-wrap">
-                {tags.slice(0, 4).map((tag, index) => (
-                  <div key={index} className="md:px-4 md:py-2 px-2 py-1 rounded-full border border-white justify-start items-start flex">
-                    <div className="text-center text-white text-base font-light font-['Epilogue'] leading-snug">{tag}</div>
-                  </div>
-                ))}
+          <div className="w-full h-full relative rounded-3xl transition-transform duration-300 ease-in-out filter grayscale group-hover:grayscale-0"
+               style={{
+                 backgroundImage: `url(${image})`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+               }} 
+          />
+          <div className="w-full h-[fit-content] cursor-pointer rounded-3xl flex-col justify-end items-center">
+            <div className="flex flex-col cursor-pointer p-4 w-full h-[fit-content] justify-between items-start gap-0.5 ">
+              <div className="pt-2 flex-col justify-start items-start inline-flex gap-1">
+                <h1 className="text-white text-[1.2rem] md:text-[20px] font-[600] font-sans leading-9">{title}</h1>
+                <div className="justify-start items-start">
+                  <p className='font-[400] text-[16px]'>{tag}</p>
+                </div>
               </div>
+              <Link href={`/work/${slug}`}>
+                <button className="flex gap-2 items-start justify-center mb-2 mt-1 w-full text-[12px] font-[300]">
+                  View Live Site
+                  <Image src="/icons/vector.svg" alt="" width={12} height={12} />
+                </button>
+              </Link>
             </div>
-
-            <Link href={`/work/${slug}`}>
-              <button className="w-[3rem] h-[2rem] px-4 py-2 bg-white rounded-full mb-2">
-                <Image src="/icons/Vector.png" alt="" width={500} height={500} className="h-30 w-30" />
-              </button>
-            </Link>
           </div>
-        </div>
-      </Link>
-    )}
+        </Link>
+      )}
     </div>
   );
 };
