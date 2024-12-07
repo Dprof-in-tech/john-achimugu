@@ -3,7 +3,7 @@ import Figma from "/public/images/figma.png";
 import Slack from "/public/images/slack.png";
 import Adobe from "/public/images/adobe.png";
 import Canva from "/public/images/canva.png";
-import Notion from "/public/images/notion.png";
+import Notion from "/public/images/Notion.png";
 import Illustrator from "/public/images/illustrator.png";
 import Miro from "/public/images/miro.png";
 import Powerpoint from "/public/images/powerpoint.png";
